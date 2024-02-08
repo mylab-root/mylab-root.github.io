@@ -333,72 +333,141 @@
 			});
 
 
-// Members.
-var $members = $('.members > article');
+	// Members.
+		var $members = $('.members > article');
 
-$members.each(function() {
+		$members.each(function() {
 
-	var $this = $(this),
-		$image = $this.find('.image'), $img = $image.find('img'),
-		$link = $this.find('.link'),
-		x;
+			var $this = $(this),
+				$image = $this.find('.image'), $img = $image.find('img'),
+				$link = $this.find('.link'),
+				x;
 
-	// Image.
+			// Image.
 
-		// Set image.
-			$this.css('background-image', 'url(' + $img.attr('src') + ')');
+				// Set image.
+					$this.css('background-image', 'url(' + $img.attr('src') + ')');
 
-		// Set position.
-			if (x = $img.data('position'))
-				$image.css('background-position', x);
+				// Set position.
+					if (x = $img.data('position'))
+						$image.css('background-position', x);
 
-		// Hide original.
-			$image.hide();
+				// Hide original.
+					$image.hide();
 
-	// Link.
-		if ($link.length > 0) {
+			// Link.
+				if ($link.length > 0) {
 
-			$x = $link.clone()
-				.text('')
-				.addClass('primary')
-				.appendTo($this);
+					$x = $link.clone()
+						.text('')
+						.addClass('primary')
+						.appendTo($this);
 
-			$link = $link.add($x);
+					$link = $link.add($x);
 
-			$link.on('click', function(event) {
+					$link.on('click', function(event) {
 
-				var href = $link.attr('href');
+						var href = $link.attr('href');
 
-				// Prevent default.
-					event.stopPropagation();
-					event.preventDefault();
+						// Prevent default.
+							event.stopPropagation();
+							event.preventDefault();
 
-				// Target blank?
-					if ($link.attr('target') == '_blank') {
+						// Target blank?
+							if ($link.attr('target') == '_blank') {
 
-						// Open in new tab.
-							window.open(href);
+								// Open in new tab.
+									window.open(href);
 
-					}
+							}
 
-				// Otherwise ...
-					else {
+						// Otherwise ...
+							else {
 
-						// Start transitioning.
-							$this.addClass('is-transitioning');
-							$wrapper.addClass('is-transitioning');
+								// Start transitioning.
+									$this.addClass('is-transitioning');
+									$wrapper.addClass('is-transitioning');
 
-						// Redirect.
-							window.setTimeout(function() {
-								location.href = href;
-							}, 500);
+								// Redirect.
+									window.setTimeout(function() {
+										location.href = href;
+									}, 500);
 
-					}
+							}
 
-			});
+					});
 
-		}
+				}
 
-});
+		});
+
+
+		// Gallery.
+		var $gallery_tiles = $('.gallery_tiles > article');
+
+		$gallery_tiles.each(function() {
+
+			var $this = $(this),
+				$image = $this.find('.image'), $img = $image.find('img'),
+				$link = $this.find('.link'),
+				x;
+
+			// Image.
+
+				// Set image.
+					$this.css('background-image', 'url(' + $img.attr('src') + ')');
+
+				// Set position.
+					if (x = $img.data('position'))
+						$image.css('background-position', x);
+
+				// Hide original.
+					$image.hide();
+
+			// Link.
+				if ($link.length > 0) {
+
+					$x = $link.clone()
+						.text('')
+						.addClass('primary')
+						.appendTo($this);
+
+					$link = $link.add($x);
+
+					$link.on('click', function(event) {
+
+						var href = $link.attr('href');
+
+						// Prevent default.
+							event.stopPropagation();
+							event.preventDefault();
+
+						// Target blank?
+							if ($link.attr('target') == '_blank') {
+
+								// Open in new tab.
+									window.open(href);
+
+							}
+
+						// Otherwise ...
+							else {
+
+								// Start transitioning.
+									$this.addClass('is-transitioning');
+									$wrapper.addClass('is-transitioning');
+
+								// Redirect.
+									window.setTimeout(function() {
+										location.href = href;
+									}, 500);
+
+							}
+
+					});
+
+				}
+
+		});
 
 })(jQuery);
