@@ -1,0 +1,393 @@
+/* Members */
+.members {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	border-top: 0 !important;
+}
+
+	.members + * {
+		border-top: 0 !important;
+	}
+
+	.members article {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
+		-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
+		-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
+		transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
+		padding: 4em 4em 2em 4em ;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		cursor: default;
+		height: 40vh;
+		max-height: 40em;
+		min-height: 23em;
+		overflow: hidden;
+		position: relative;
+		/* width: 40%; */
+		width: 100%;
+	}
+
+		.members article .image {
+			display: none;
+		}
+
+		.members article header {
+			position: relative;
+			z-index: 3;
+		}
+
+		.members article h3 {
+			font-size: 1.75em;
+		}
+
+			.members article h3 a:hover {
+				color: inherit !important;
+			}
+
+		.members article .link.primary {
+			border: 0;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 4;
+		}
+
+		.members article:before {
+			-moz-transition: opacity 0.5s ease;
+			-webkit-transition: opacity 0.5s ease;
+			-ms-transition: opacity 0.5s ease;
+			transition: opacity 0.5s ease;
+			bottom: 0;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.85;
+			position: absolute;
+			width: 100%;
+			z-index: 2;
+		}
+
+		.members article:after {
+			background-color: rgba(36, 41, 67, 0.25);
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		.members article:hover:before {
+			opacity: 0;
+		}
+
+		.members article.is-transitioning {
+			-moz-transform: scale(0.95);
+			-webkit-transform: scale(0.95);
+			-ms-transform: scale(0.95);
+			transform: scale(0.95);
+			-moz-filter: blur(0.5em);
+			-webkit-filter: blur(0.5em);
+			-ms-filter: blur(0.5em);
+			filter: blur(0.5em);
+			opacity: 0;
+		}
+
+		.members article:nth-child(4n - 1), .members article:nth-child(4n - 2) {
+			/* width: 60%; */
+			width: 50%;
+		}
+
+		.members article:nth-child(6n - 5):before {
+			/* background-color: #6fc3df; */
+			background-color: #1D3557;
+		}
+
+		.members article:nth-child(6n - 4):before {
+			/* background-color: #8d82c4; */
+			background-color: #457B9D;
+		}
+
+		.members article:nth-child(6n - 3):before {
+			/* background-color: #ec8d81; */
+			background-color: #A8DADC;
+		}
+
+		.members article:nth-child(6n - 2):before {
+			/* background-color: #e7b788; */
+			background-color: #F1FAEE;
+		}
+
+		.members article:nth-child(6n - 1):before {
+			/* background-color: #8ea9e8; */
+			background-color: #EC9A9A;
+		}
+
+		.members article:nth-child(6n):before {
+			/* background-color: #87c5a4; */
+			background-color: #E63946;
+		}
+
+	@media screen and (max-width: 1280px) {
+
+		.members article {
+			padding: 4em 3em 2em 3em ;
+			height: 30vh;
+			max-height: 30em;
+			min-height: 20em;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.members article {
+			width: 50% !important;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.members article {
+			padding: 3em 1.5em 1em 1.5em ;
+			height: 16em;
+			max-height: none;
+			min-height: 0;
+		}
+
+			.members article h3 {
+				font-size: 1.5em;
+			}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.members {
+			display: block;
+		}
+
+			.members article {
+				height: 20em;
+				width: 100% !important;
+			}
+
+	}
+
+
+/* Instructor */
+.instructor {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	border-top: 0 !important;
+}
+
+	.instructor + * {
+		border-top: 0 !important;
+	}
+
+	.instructor article {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
+		-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
+		-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
+		transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
+		padding: 4em 4em 2em 4em ;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		cursor: default;
+		height: 40vh;
+		max-height: 40em;
+		min-height: 23em;
+		overflow: hidden;
+		position: relative;
+		/* width: 40%; */
+		width: 100%;
+	}
+
+		.instructor article .image {
+			display: none;
+		}
+
+		.instructor article header {
+			position: relative;
+			z-index: 3;
+		}
+
+		.instructor article h3 {
+			font-size: 1.75em;
+		}
+
+			.instructor article h3 a:hover {
+				color: inherit !important;
+			}
+
+		.instructor article .link.primary {
+			border: 0;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 4;
+		}
+
+		.instructor article:before {
+			-moz-transition: opacity 0.5s ease;
+			-webkit-transition: opacity 0.5s ease;
+			-ms-transition: opacity 0.5s ease;
+			transition: opacity 0.5s ease;
+			bottom: 0;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.85;
+			position: absolute;
+			width: 100%;
+			z-index: 2;
+		}
+
+		.instructor article:after {
+			background-color: rgba(36, 41, 67, 0.25);
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		.instructor article:hover:before {
+			opacity: 0;
+		}
+
+		.instructor article.is-transitioning {
+			-moz-transform: scale(0.95);
+			-webkit-transform: scale(0.95);
+			-ms-transform: scale(0.95);
+			transform: scale(0.95);
+			-moz-filter: blur(0.5em);
+			-webkit-filter: blur(0.5em);
+			-ms-filter: blur(0.5em);
+			filter: blur(0.5em);
+			opacity: 0;
+		}
+
+		.instructor article:nth-child(4n - 1), .members article:nth-child(4n - 2) {
+			width: 50%;
+		}
+
+		.instructor article:nth-child(6n - 5):before {
+			/* background-color: #6fc3df; */
+			background-color: black;
+		}
+
+		.instructor article:nth-child(6n - 4):before {
+			/* background-color: #8d82c4; */
+			background-color: #457B9D;
+		}
+
+		.instructor article:nth-child(6n - 3):before {
+			/* background-color: #ec8d81; */
+			background-color: #A8DADC;
+		}
+
+		.instructor article:nth-child(6n - 2):before {
+			/* background-color: #e7b788; */
+			background-color: #F1FAEE;
+		}
+
+		.instructor article:nth-child(6n - 1):before {
+			/* background-color: #8ea9e8; */
+			background-color: #EC9A9A;
+		}
+
+		.instructor article:nth-child(6n):before {
+			/* background-color: #87c5a4; */
+			background-color: #E63946;
+		}
+
+	@media screen and (max-width: 1280px) {
+
+		.instructor article {
+			padding: 4em 3em 2em 3em ;
+			height: 30vh;
+			max-height: 30em;
+			min-height: 20em;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.instructor article {
+			width: 100% !important;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.instructor article {
+			padding: 3em 1.5em 1em 1.5em ;
+			height: 16em;
+			max-height: none;
+			min-height: 0;
+		}
+
+			.instructor article h3 {
+				font-size: 1.5em;
+			}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.instructor {
+			display: block;
+		}
+
+			.instructor article {
+				height: 20em;
+				width: 100% !important;
+			}
+
+	}
