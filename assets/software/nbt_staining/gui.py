@@ -1,6 +1,7 @@
 import os
+import base64
 import pandas as pd
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageTk
 from urllib.request import urlopen
 import tkinter as tk
 from tkinter import filedialog, PhotoImage
@@ -9,7 +10,15 @@ from multiprocessing import freeze_support
 
 from nbt_intensity import nbt_intensity
 
-truetype_url = "https://github.com/P10911004-NPUST/fonts/blob/main/harmonyos-sans/HarmonyOS_Sans_Medium.ttf?raw=true"
+# truetype_url = "https://github.com/P10911004-NPUST/fonts/blob/main/harmonyos-sans/HarmonyOS_Sans_Medium.ttf?raw=true"
+try:
+    icon_url = urlopen(
+        "https://raw.githubusercontent.com/mylab-root/mylab-root.github.io/main/contents/software/icon.ico"
+    )
+    icon = icon_url.read()
+    icon_url.close()
+except:
+    pass
 
 
 def get_folder_path():
@@ -70,10 +79,13 @@ if __name__ == "__main__":
     # Interface
     ############################################################################
     root = tk.Tk()
-    # icon = PhotoImage(file="icon.png")
-    # root.iconphoto(False, icon)
-    if os.path.exists("icon.ico"):
-        root.iconbitmap("icon.ico")
+    try:
+        icon = ImageTk.PhotoImage(data=icon)
+        root.iconphoto(False, icon)
+    except:
+        if os.path.exists("icon.ico"):
+            root.iconbitmap("icon.ico")
+        pass
     root.title("NBT staining intensity")
     root.geometry("600x350")
     title_label = tk.Label(root, text="NBT intensity", font=("Calibri 20 bold")).pack()

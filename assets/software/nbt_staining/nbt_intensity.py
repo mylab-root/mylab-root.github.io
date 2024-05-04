@@ -9,7 +9,7 @@ from urllib.request import urlopen
 
 from filters import *
 
-truetype_url = "https://github.com/P10911004-NPUST/fonts/blob/main/harmonyos-sans/HarmonyOS_Sans_Medium.ttf?raw=true"
+font_url = "https://github.com/mylab-root/mylab-root.github.io/blob/main/assets/webfonts/HarmonyOS_Sans_Medium.ttf?raw=true"
 
 # font = {"family": "sans", "weight": "bold", "size": 5}
 # matplotlib.rc("font", **font)
@@ -92,7 +92,7 @@ def nbt_intensity(img):
         if isinstance(img, str):
             contours = Image.fromarray(contours)
             draw = ImageDraw.Draw(contours)
-            font = ImageFont.truetype(urlopen(truetype_url), size=70)
+            font = ImageFont.truetype(urlopen(font_url), size=70)
             draw.text(
                 (30, 10),
                 f"Intensity: {round(total_nbt_intensity / 1_000_000, 4)} M",
@@ -118,7 +118,7 @@ def nbt_intensity(img):
         if isinstance(img, str):
             contours = Image.fromarray(contours)
             draw = ImageDraw.Draw(contours)
-            font = ImageFont.truetype(urlopen(truetype_url), size=70)
+            font = ImageFont.truetype(urlopen(font_url), size=70)
             draw.text(
                 (30, 10),
                 f"Intensity: {round(total_nbt_intensity / 1_000_000, 4)} M",
