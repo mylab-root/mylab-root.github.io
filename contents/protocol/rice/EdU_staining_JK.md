@@ -1,31 +1,47 @@
----
-output:
-  html_document:
-    theme:
-      version: 4
-  pdf_document: default
----
-
 # **EdU staining**
 
 ### <a href="https://www.thermofisher.com/order/catalog/product/tw/en/C10351">Invitrogen&trade; Click-iT&trade; EdU Alexa Fluor&trade; 488 HCS Assay</a> ( <a href="https://assets.thermofisher.com/TFS-Assets/LSG/manuals/mp10351.pdf">Manual</a> )
 
-> 5-Ethynyl-2'-deoxyuridine  
-> 252.22 g/mol  
-> Maximum solubility: 25 mM in water and up to 100 mM in DMSO.
+### <a href="https://www.thermofisher.com/order/catalog/product/E10187">Invitrogen&trade; EdU (5-ethynyl-2'-deoxyuridine)</a> ( <a href="https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp10044.pdf">Manual</a> )
 
-- "**ddH<sub>2</sub>O**" means deionized ultrapure water;
-- "**complete medium**" means the medium used to cultivate the samples, for example, half-MS medium in this case.
+<hr>
+
+> EdU ( 5-Ethynyl-2'-deoxyuridine)  
+
+> Molecular weight: 252.22 g / mol  
+
+> ### Solubility:
+> | Solvent         | Maximum solubility | Concentration |
+> | :----------:    | :---:              | :---:         |
+> | DMSO            | 25 mg / mL         | 100 mM        |
+> | water           | 6.25 mg / mL       |  25 mM        |
+> | aqueous buffer  | 6.25 mg / mL       |  25 mM        |
+> ||||
 
 <br>
+
+# Materials NOT Provided
+
+### Please refer to the last page to make the PBS 10X stock and fixative solution.  
+
+| Material                          | Concentration | Storage location       |
+| :---------------------------      | :-----:       | :------------------:   |
+| Phosphate buffer saline ( PBS )   | 1X            | JK's bench             |
+| Fixative solution                 | 4%            | biosafety cabinet      |
+| Fluoromount-G                     | --            | 4&deg;C ( d )          |
+||||
+
+<br>
+<div style='page-break-after: always;'></div>
 
 # Procedure
 
 ## **Step 1: Labeling**
 
-1. Prepare <b style='color: violet'>incubation medium</b> containing <b style='color: violet'>10 <i>&micro;</i>M Component A</b>;
-- For example, if we have five groups of samples, add <b>100 <i>&micro;</i>L 10 mM Component A</b> into 100 mL half-MS medium for the experiment. Then, dispense the diluted 10 <i>&micro;</i>M Component A to new falcon tubes, each tube takes around 20 mL for each sample ( make sure the root tips can be fully submerged in the solution).
-2. Incubate the plants in the <b style='color: violet'>incubation medium</b> in the same cultivation condition for <b style='color: violet'>1 ~ 2 hours</b>.
+1. Prepare <b style='color: violet'>incubation medium</b> containing <b style='color: violet'>10 <i>&micro;</i>M Component A ( EdU )</b>;
+> The manufacturer's manual suggests to dilute the EdU from 10 mM to 10 <i>&micro;</i>M for <i>in vitro</i> experiment. When EdU was dissolved in DMSO, this concentration of DMSO might facilitate the entry of organic molecules into tissue. However, 0.1% of DMSO will affect root growth. So, consider to make higher concentration of EdU stocks, change solvent, or reduce the working solution concentration.
+
+2. Incubate the plants in the <b style='color: violet'>incubation medium</b> in the same cultivation condition for <b style='color: violet'>1 hour</b>.
 - Directly immersed the roots into the solution, <b style='color: red'>DO NOT</b> cut the shoot part, the plant should still alive. The root should be fully submerged into the solution. Do not over-pushing the root to avoid roots injury. 
 
 ## **Step 2: Fixation**
@@ -34,13 +50,15 @@ output:
 
 2. Cut the root tip ( around 5 mm ) and fully immerse in the fixative solution;
 
-- Better to do this in biosafety cabinet. If too many roots, better to cut the root on a rigid agar plate (~ 1%), and keep the surface wet with 1X PBS to prevent the root being dried.
+- Better to do this in biosafety cabinet. If too many roots, cut the root on a rigid agar plate ( ~ 1% ), keep the surface wet with 1X PBS to prevent the root being dried.
 
 3. Incubate <b style='color: violet'>30 minutes</b> under <b style='color: violet'>room temperature</b>;
 
 4. Remove fixative solution and add <b style='color: violet'>400 <i>&micro;</i>L 1X PBS</b> to wash the roots. Gently pipetting 5-10 times ( avoiding contact with the root tip ), then leave on the benchtop for 10 mins. Repeat this wash procedure three times ( <b style='color: violet'>3 &times; 10 mins</b> ).
 - <b style='color: darkorange'>You can keep the samples in 1X PBS solution for at least 24 hours in 4&deg;C protected from light after removing the fixative solution.</b>
 
+<br>
+<div style='page-break-after: always;'></div>
 
 ## **Step 3: Detection**
 
@@ -69,7 +87,7 @@ output:
 
 3. Remove wash solution and add <b style='color: violet'>197 <i>&micro;</i>L</b> of <b style='color: violet'>Click-iT&reg; reaction cocktail</b> ( prepare as the table above ) for each sample;
 4. Incubate for <b style='color: violet'>30 minutes</b> at <b style='color: violet'>room temperature</b>. Must be <b style='color: red'>protected from light</b>;
-5. Remove the reaction cocktail and wash once with 200 &micro;L of Click-iT&reg; reaction rince buffer ( <b style='color: violet'>Component F</b> );
+5. Remove the reaction cocktail and wash once with <b style='color: violet'>200 <i>&micro;</i>L</b> of <b style='color: violet'>Click-iT&reg; reaction rince buffer ( Component F )</b>;
 6. <b style='color: violet'>Wash 3 times</b> with 1X PBS ( <b style='color: violet'>3 &times; 10 mins</b> );
 7. Mount on slide with <b style='color: violet'>Fluoromount-G anti-fade</b> solution<sup>&dagger;</sup>. Proceed to confocal imaging and analysis.
 
@@ -125,8 +143,9 @@ output:
 - `File` &rarr; `Save as` &rarr; `Tiff...`
 6. Select the region of interest (ROI) and measure.
 
-## **Step 6: Data analysis**
-Finished !!!
+<br>
+
+<hr><h2 style="text-align: center">Done !!!</h2><hr>
 
 <br>
 <div style='page-break-after: always;'></div>
@@ -137,38 +156,42 @@ Finished !!!
 
 # Materials Provided by the kit
 
-| Component            | Material name                           | C10351 <sup>*</sup> | Concentration |
-| :-----:              | :-------------------------              | :-----:             | :-----:       |
-| A <sup>&alpha;</sup> | EdU **working solution**                | 525 &micro;L        | 10 mM         |
-| B <sup>&ensp;</sup>  | Alexa Fluor&reg; azide 488              | 330 &micro;L        | 1X            |
-| C <sup>&beta;</sup>  | Click-iT&reg; EdU **reaction buffer**   | 15 mL               | 10X           |
-| D <sup>&ensp;</sup>  | CuSO<sub>4</sub>                        | 1 vial              | 100 mM        |
-| E <sup>&gamma;</sup> | Click-iT&reg; EdU **buffer additive**   | 400 mg              | 10X           |
-| F <sup>&ensp;</sup>  | Click-iT&reg; reaction **rinse buffer** | 125 mL              | 1X            |
-|                      |                                         |                     |               |
+| Component              | Material name                           | C10351 <sup>*</sup> | Concentration | Location         |
+| :-----:                | :-------------------------              | :-----:             | :-----:       | :---:            |
+| A <sup>&alpha;</sup>   | EdU **working solution**                | 525 &micro;L        | 10 mM         | 4&deg;C ( c )    |
+| B <sup>&beta;</sup>    | Alexa Fluor&reg; azide 488              | 330 &micro;L        | 1X            | 4&deg;C ( c )    |
+| C <sup>&gamma;</sup>   | Click-iT&reg; EdU **reaction buffer**   | 15 mL               | 10X           | 4&deg;C ( c )    |
+| D <sup>&delta;</sup>   | CuSO<sub>4</sub>                        | 1 vial              | 100 mM        | 4&deg;C ( c )    |
+| E <sup>&epsilon;</sup> | Click-iT&reg; EdU **buffer additive**   | 400 mg              | 10X           | &minus;20&deg;C  |
+| F <sup>&zeta;</sup>    | Click-iT&reg; reaction **rinse buffer** | 125 mL              | 1X            | 4&deg;C ( c )    |
+|||||
 
 <sup>*</sup> **C10351**: Catalogue number. All the raw materials in this kit should be stored at <b style='color: violet'>2 ~ 6&deg;C</b>, <b style='color: violet'>dessiccated</b>, <b style='color: violet'>protect from light</b>, and <b style='color: violet'>DO NOT FREEZE</b>.  
 
-<sup>&alpha;</sup> **Component A**: This is the EdU chemical stock solution. Dilute to 10 <i>&micro;</i>M in complete medium on the day of the experiment, and use immediately. The 10 mM stock solution is stored at -20&deg;C ( the EdU powder also put in -20&deg;C, in JK's white box ), and the 10 mM aliquots are stored at 4&deg;C (in the EdU kit box, put together with the other components).
+<sup>&alpha;</sup> **Component A**: This is the EdU chemical stock solution. Dilute to 10 <i>&micro;</i>M in complete medium on the day of the experiment, and use immediately. The 10 mM stock solution is stored at &minus;20&deg;C ( the EdU powder also put in &minus;20&deg;C, in JK's white box ), and the 10 mM aliquots are stored at 4&deg;C (in the EdU kit box, put together with the other components).
 
-<sup>&beta;</sup> **Component C**: Dilute from 10X to 1X using ddH<sub>2</sub>O, *i.e.*, 15 mL 10X Component C + 135 mL ddH<sub>2</sub>O. 
+<sup>&beta;</sup> **Component B**: Fluorescence probe. Protected from light.
+
+<sup>&gamma;</sup> **Component C**: Dilute from 10X to 1X using ddH<sub>2</sub>O, *i.e.*, 15 mL 10X Component C + 135 mL ddH<sub>2</sub>O. 
 The 1X solution could be stored at 2 ~ 6&deg;C for 6 months.  
 
-<sup>&gamma;</sup> **Component E**: Add 2 mL ddH<sub>2</sub>O to the vial of the Component E, mix until fully dissolve the powder to 10X solution. The <b style='color: violet'>10X solution</b> could be stored at <b style='color: violet'>&leq; &minus;20&deg;C</b> for up to 1 year. If the solution develops a brown color, it has degraded and should be discarded.
+<sup>&delta;</sup> **Component D**: Catalyze the reaction.
+
+<sup>&epsilon;</sup> **Component E**: Add 2 mL ddH<sub>2</sub>O to the vial of the Component E, mix until fully dissolve the powder to 10X solution. The <b style='color: violet'>10X solution</b> could be stored at <b style='color: violet'>&leq; &minus;20&deg;C</b> for up to 1 year. If the solution develops a brown color, it has degraded and should be discarded.
+
+<sup>&zeta;</sup> **Component F**: Used to wash cells after the Click-iT&reg; reaction cocktail incubation step. This helps to remove unreacted components and reduce background. Located at 4 &deg;C ( c ), in front of the EdU kit boxes.
 
 <br>
 <div style='page-break-after: always;'></div>
 
-# Materials NOT Provided
+# Materials NOT Provided by the kit
 
-| Material                                           | Concentration | Storage location      |
-| :---------------------------                       | :-----:       |:---------------------:|
-| PBS ( Phosphate buffer saline ) <sup>&delta;</sup> | 1X            |                       |
-| Fixative solution <sup>&epsi;</sup>                | 4%            |                       |
-| Fluoromount-G                                      | --            | 4&deg;C ( D cabinet ) |
+## Phosphate buffer saline ( PBS ) ( pH 7.4 )</b>
 
-### <b><sup>&delta;</sup> 1X PBS ( pH 7.4 )</b>
 - Make 10X PBS stock solution first as follow ( 10X stock located at 4&deg;C bottom right ). When in use, dilute to 1X PBS.
+
+- 10X PBS &xrarr; Adjust to pH 7.4 &xrarr; Autoclave &xrarr; Dilute to 1X ( 100 mL 10X PBS + 900 mL ddH<sub>2</sub>O )
+
 > | 10X PBS contents              | M.W. (g/mol) | Addition |
 > |:----------------------------- |:------------:| --------:|
 > | NaCl                          | 58.44        | 80.1 g   |
@@ -176,11 +199,11 @@ The 1X solution could be stored at 2 ~ 6&deg;C for 6 months.
 > | Na<sub>2</sub>HPO<sub>4</sub> | 141.96       | 14.4 g   |
 > | KH<sub>2</sub>PO<sub>4</sub>  | 136.09       | 2.7 g    |
 > | ddH<sub>2</sub>O              |              | 1 L      |
-> |                               |              |          |
+> ||||
 
-- 10X PBS &xrarr; Adjust to pH 7.4 &xrarr; Autoclave &xrarr; Dilute to 1X ( 100 mL 10X PBS + 900 mL ddH<sub>2</sub>O )
+<br>
 
-### <b><sup>&epsi;</sup> Fixative solution</b>
+## Fixative solution</b>
 > | Chemical            | Addition      | Final concentration | Storage location |
 > |:------------------- | -------------:|:-------------------:|:----------------:|
 > | Formaldehyde (38%)  | 105 &micro;L  | 4%                  | Toxic cabinet D  |

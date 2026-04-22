@@ -1,11 +1,4 @@
----
-output:
-  html_document:
-    theme: 
-      version: 4
----
-
-# NBT stain
+# **NBT stain**
 
 Detect superoxide. Form insoluble dark-blue formazan precipitate after reduced by O<sub>2</sub><sup>&bullet;&minus;</sup>.
 
@@ -37,6 +30,12 @@ Sodium Phosphate Buffer Preparation and Recipe
 2. Vacumm 20 minutes under ~ 650 mmHg ( the lid should be opened ). 
 3. (optional) Close the lid and incubate under 37&deg;C for 10 minutes ~ 2 hours, depends on the root condition.
 - Generally, 10 mins is appropritate for young root ( less than one week old ), and the extremely old root ( more than two weeks old ) may require 2 hours.
+
+<br>
+
+<hr><h2 style="text-align: center">Done !!!</h2><hr>
+
+<br>
 
 ## Note
 

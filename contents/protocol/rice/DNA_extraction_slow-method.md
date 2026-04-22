@@ -1,10 +1,3 @@
----
-output:
-  html_document:
-    theme: 
-      version: 4
----
-
 # **DNA extraction**
 
 ## Preparation:
@@ -97,6 +90,10 @@ If directly powderized the sample with liquid nitrogen within the ependorf, afte
 | DNA           | ~ 1.8         | > 2.0        | > 1.2        |
 | RNA           | ~ 2.0         | > 2.0        | > 1.2        |
 |||||
+
+<br>
+
+<hr><h2 style="text-align: center">Done !!!</h2><hr>
 
 <br>
 <div style='page-break-after: always;'></div>

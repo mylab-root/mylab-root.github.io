@@ -1,11 +1,6 @@
----
-output:
-  html_document:
-    theme: 
-      version: 4
----
-
 # **Gel electrophoresis (Southern)**
+
+<br>
 
 # Preparation
 | Material                                         | Concentration | Final concentration | Location         |
@@ -68,3 +63,9 @@ For example, 2 &micro;L 6X loading dye + 10 &micro;L PCR product;
 7. Position Gel &rarr; Filter 1 &rarr; adjust gel position;
 8. Run protocol;
 9. Export for publication ( Export for analysis is 16-bit images ).
+
+<br>
+
+<hr><h2 style="text-align: center">Done !!!</h2><hr>
+
+<br>

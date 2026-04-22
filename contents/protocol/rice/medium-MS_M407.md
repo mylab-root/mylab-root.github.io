@@ -1,4 +1,4 @@
-# Rice Half-MS medium
+# **Rice Half-MS medium**
 
 | Chemicals                                                      | Stock<br>Conc. | Addition       | Final<br>Conc. | Location      |
 | :--------                                                      | :---:          | :---:          | :---:          | :---:         |
@@ -21,4 +21,4 @@ The final pH should be around <b>5.7 ~ 5.8</b>. Autoclave under <b>121&deg;C</b>
 Since KOH releases heat during dissolution, <b>gradually and slowly add the KOH granules into the water</b>.
 
 <br>
-<div style='page-break-after: always;'></div>
+
