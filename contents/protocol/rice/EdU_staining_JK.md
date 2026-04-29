@@ -46,16 +46,18 @@
 
 ## **Step 2: Fixation**
 
-1. Prepare <b style='color: violet'>200 <i>&micro;</i>L fixative solution</b> for each sample ( per eppendorf );
+1. Prepare <b style='color: violet'>200 <i>&micro;</i>L fixative solution</b> in eppendorf for each group of sample;
 
-2. Cut the root tip ( around 5 mm ) and fully immerse in the fixative solution;
+2. Cut the root tip ( around 1 cm ) and fully immerse in the fixative solution;
 
-- Better to do this in biosafety cabinet. If too many roots, cut the root on a rigid agar plate ( ~ 1% ), keep the surface wet with 1X PBS to prevent the root being dried.
+- Better to do this in biosafety cabinet. If too many roots, cut the root on a rigid agar plate ( ~ 1% ), keep the surface wet with 1X PBS to prevent the root dried.
 
 3. Incubate <b style='color: violet'>30 minutes</b> under <b style='color: violet'>room temperature</b>;
 
-4. Remove fixative solution and add <b style='color: violet'>400 <i>&micro;</i>L 1X PBS</b> to wash the roots. Gently pipetting 5-10 times ( avoiding contact with the root tip ), then leave on the benchtop for 10 mins. Repeat this wash procedure three times ( <b style='color: violet'>3 &times; 10 mins</b> ).
-- <b style='color: darkorange'>You can keep the samples in 1X PBS solution for at least 24 hours in 4&deg;C protected from light after removing the fixative solution.</b>
+4. Remove fixative solution and add <b style='color: violet'>400 <i>&micro;</i>L 1X PBS</b> to wash the roots. Gently pipetting 5-10 times ( avoid touching the root tip ), then leave on the benchtop for 10 mins. Repeat this wash procedure three times ( <b style='color: violet'>3 &times; 10 mins</b> ).
+- <b style='color: darkorange'>Discard the fixative solution in the dark blue toxic carboy under the toxic cabinet;</b>
+
+5. (optional) You can keep the samples in 1X PBS solution up to 24 hours in 4&deg;C protected from light after washing out the fixative solution.
 
 <br>
 <div style='page-break-after: always;'></div>
@@ -64,14 +66,13 @@
 
 ### **Prepare the cocktail**
 
-1. Dilute the <b style='color: violet'>Component C</b> and <b style='color: violet'>Component E</b> from 10X to <b style='color: violet'>1X</b> using <b style='color: violet'>ddH<sub>2</sub>O</b>. Calculate the total usage amount according to the following tables.
-- 10X Component C is stored at 4&deg;C in the kit box.
-- 10X Component E is stored at -20&deg;C in JK's white box.
-- Prepare the Component C and E as much as necessary only for that day's experiments, and use on the same day.
+1. Place all the components <b style='color: violet'>on ice</b> and <b style='color: violet'>protected from light</b>. Prepare the cocktail as much as necessary only for that day's experiments, and use on the same day.
+> - 10X Component E is stored at &minus;20&deg;C in JK's white box.
+> - the other components are stored at 4&deg;C, in the kit box.
 
 2. Add the <b style='color: violet'>Click-iT&reg; reaction cocktail</b> ingredients **as follow**. 
-- <b><i style='color:red'>Add the incredients in the order listed in the table; otherwise, the reaction will not proceed optimally.</i></b>
-- <b><i style='color:red'>Use the cocktail immediately after preparation. The Click-iT&reg; reaction buffer additive is susceptable to oxidation and is the limiting factor to the Click-iT&reg; reaction cocktail's effectiveness over time.</i></b>
+- <b style='color:red'>Add the incredients in the order listed in the table</b>; otherwise, the reaction will not proceed optimally.</i>
+- The cocktail must be <b style='color:red'>used immediately</b> after preparation. The Click-iT&reg; reaction buffer additive is susceptable to oxidation and is the limiting factor to the Click-iT&reg; reaction cocktail's effectiveness over time.</i></b>
 
 > | Component        | Material name                               | Addition per sample         | Note              |
 > | :------:         | :---------------------------------------    |:-------------------:        | :-----:           |
@@ -82,20 +83,21 @@
 > | E                | **10X** Click-iT&reg; EdU buffer additive   | 2 <i>&micro;</i>L           | add before use    |
 > | Total:           |                                             | 198.5 <i>&micro;</i>L       | take 197 &micro;L |
 
-
 ### **Incubation**
 
 3. Remove wash solution and add <b style='color: violet'>197 <i>&micro;</i>L</b> of <b style='color: violet'>Click-iT&reg; reaction cocktail</b> ( prepare as the table above ) for each sample;
-4. Incubate for <b style='color: violet'>30 minutes</b> at <b style='color: violet'>room temperature</b>. Must be <b style='color: red'>protected from light</b>;
-5. Remove the reaction cocktail and wash once with <b style='color: violet'>200 <i>&micro;</i>L</b> of <b style='color: violet'>Click-iT&reg; reaction rince buffer ( Component F )</b>;
-6. <b style='color: violet'>Wash 3 times</b> with 1X PBS ( <b style='color: violet'>3 &times; 10 mins</b> );
-7. Mount on slide with <b style='color: violet'>Fluoromount-G anti-fade</b> solution<sup>&dagger;</sup>. Proceed to confocal imaging and analysis.
 
-<sup>&dagger;</sup> <i>Using ddH<sub>2</sub>O is also fine if the laser intensity is low and the laser exposure time ( image capturing time ) is short.</i>
+4. Incubate for <b style='color: violet'>30 minutes</b> at <b style='color: violet'>room temperature</b>. Must be <b style='color: red'>protected from light</b>;
+
+5. Remove the reaction cocktail and wash once with <b style='color: violet'>200 <i>&micro;</i>L</b> of <b style='color: violet'>Click-iT&reg; reaction rince buffer ( Component F )</b>;
+
+6. <b style='color: violet'>Wash 3 times</b> with 1X PBS ( <b style='color: violet'>3 &times; 10 mins</b> );
+
+7. Mount on slide with <b style='color: violet'>Fluoromount-G anti-fade</b> solution<sup>&dagger;</sup>. Proceed to confocal imaging and analysis.  
+- <sup>&dagger;</sup> Using ddH<sub>2</sub>O is also fine if the laser intensity is low and the laser exposure time ( image capturing time ) is short.
 
 <br>
 <div style='page-break-after: always;'></div>
-
 
 ## **Step 4: Confocal parameters**
 
@@ -104,14 +106,14 @@
 | Excitation peak                                            | 495 nm            | 488 nm                      |
 | Emission peak                                              | 519 nm            | 499 ~ 539 nm                |
 | Magnification                                              |                   | 10X                         |
-| Laser intensity ( <b style='color: #97ed1d'>488 nm</b> ) |                   | 1.0%                        |       
-| Master Gain                                                |                   | 700 V                       |
+| Laser intensity ( <b style='color: #97ed1d'>488 nm</b> ) |                   | 2.0%                        |       
+| Master Gain                                                |                   | 600 V                       |
 | Digital Gain                                               |                   | 1.0                         |
 | Pinhole                                                    |                   | &approx; 32 <i>&micro;</i>m |
 | Z-stack interval                                           |                   | 2 <i>&micro;</i>m           |
-| Scan speed                                                 |                   | 7                           |
+| Scan speed                                                 |                   | 6                           |
 | Scan direction                                             |                   | <b>&xrarr;</b>              |
-|                                                            |                   |                             |
+||||
 
 <br>
 <div style='page-break-after: always;'></div>
@@ -132,6 +134,7 @@
 > | View stack with: | Hyperstack |
 > | Color mode:      | Colorized  |
 > | Autoscale        | &#9745;    |
+> |||
 
 4. Stack the image layers and perform max intensity projection along the Z-axis;
 - `Image` &rarr; `Stacks` &rarr; `Z project...` &rarr; `Projection type: Max Intensity`
