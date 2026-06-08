@@ -28,7 +28,7 @@ Dissolve the NBT powder in <a href='https://www.novoprolabs.com/tools/buffer-pre
 
 1. Directly immersed the root into the NBT solution ( pre-warmed to 30&deg;C ), avoid the roots from touching the tube wall.
 
-2. Vacumm 20 minutes under ~ 650 mmHg ( the lid should be opened ).
+2. Vacumm 25 minutes under ~ 650 mmHg ( the lid should be opened ).
 
 3. (optional) Close the lid and incubate under 30&deg;C for 10 minutes ~ 2 hours, depend on the root condition.
 - Generally, 10 mins is appropritate for young root ( less than one week old ), and the extremely old root ( more than two weeks old ) may require 2 hours.
