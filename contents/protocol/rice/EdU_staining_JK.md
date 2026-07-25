@@ -39,22 +39,27 @@
 ## **Step 1: Labeling**
 
 1. Prepare <b style='color: violet'>incubation medium</b> containing <b style='color: violet'>10 <i>&micro;</i>M Component A ( EdU )</b>;
-> The manufacturer's manual suggests to dilute the EdU from 10 mM to 10 <i>&micro;</i>M for <i>in vitro</i> experiment. When EdU was dissolved in DMSO, this concentration of DMSO might facilitate the entry of organic molecules into tissue. However, 0.1% of DMSO will affect root growth. So, consider to make higher concentration of EdU stocks, change solvent, or reduce the working solution concentration.
+
+- Component A ( 100 <i>&micro;</i>M stock ) is stored at 4&deg;C ( e-bottom-left ) JK's green box ( top-left corner side ).
+
+- Generally we make 40 mL incubation medium in 50 mL falcon tube for each treatment groups. For example, if we have 6 treatment groups, add 25 <i>&micro;</i>L Component A stock ( 100 <i>&micro;</i>M ) into 250 mL medium and mix thoroughly. Then, dispense 40 mL to each tube.
+
+> The manufacturer's manual suggests to dilute the EdU from 10 mM to 10 <i>&micro;</i>M for <i>in vitro</i> experiment. When EdU was dissolved in DMSO, this concentration of DMSO might facilitate the entry of organic molecules into tissue. However, 0.1% of DMSO will affect root growth. So, consider to make higher concentration of EdU stocks, change solvent, or reduce the working solution concentration. Currently, this protocol uses higher concentration of EdU stock ( 100 <i>&micro;</i>M ), and the staining result is statisfiying.
 
 2. Incubate the plants in the <b style='color: violet'>incubation medium</b> in the same cultivation condition for <b style='color: violet'>1 hour</b>.
 - Directly immersed the roots into the solution, <b style='color: red'>DO NOT</b> cut the shoot part, the plant should still alive. The root should be fully submerged into the solution. Do not over-pushing the root to avoid roots injury. 
 
 ## **Step 2: Fixation**
 
-1. Prepare <b style='color: violet'>200 <i>&micro;</i>L fixative solution</b> in eppendorf for each group of sample;
+1. Prepare <b style='color: violet'>400 <i>&micro;</i>L fixative solution</b> in eppendorf for each group of sample;
 
 2. Cut the root tip ( around 1 cm ) and fully immerse in the fixative solution;
 
 - Better to do this in biosafety cabinet. If too many roots, cut the root on a rigid agar plate ( ~ 1% ), keep the surface wet with 1X PBS to prevent the root dried.
 
-3. Incubate <b style='color: violet'>30 minutes</b> under <b style='color: violet'>room temperature</b>;
+3. Incubate <b style='color: violet'>1 hour</b> under <b style='color: violet'>room temperature</b>;
 
-4. Remove fixative solution and add <b style='color: violet'>400 <i>&micro;</i>L 1X PBS</b> to wash the roots. Gently pipetting 5-10 times ( avoid touching the root tip ), then leave on the benchtop for 10 mins. Repeat this wash procedure three times ( <b style='color: violet'>3 &times; 10 mins</b> ).
+4. Remove fixative solution and add <b style='color: violet'>400 <i>&micro;</i>L 1X PBS</b> to wash the roots. Gently pipetting 5-10 times ( avoid touching the root tip ), then leave on the benchtop for 10 mins. Repeat this wash procedure around 5 times ( <b style='color: violet'>5 &times; 10 mins</b> ) until no bubbles appear.
 - <b style='color: darkorange'>Discard the fixative solution in the dark blue toxic carboy under the toxic cabinet;</b>
 
 5. (optional) You can keep the samples in 1X PBS solution up to 24 hours in 4&deg;C protected from light after washing out the fixative solution.
@@ -67,8 +72,9 @@
 ### **Prepare the cocktail**
 
 1. Place all the components <b style='color: violet'>on ice</b> and <b style='color: violet'>protected from light</b>. Prepare the cocktail as much as necessary only for that day's experiments, and use on the same day.
-> - 10X Component E is stored at &minus;20&deg;C in JK's white box.
-> - the other components are stored at 4&deg;C, in the kit box.
+> - Component B, C, and D are stored at 4&deg;C, in the kit box.
+> - Component E ( 10X stock ) is stored at &minus;20&deg;C in JK's white box.
+> - Component F is stored at 4&deg;C, placed in front of the kit box.
 
 2. Add the <b style='color: violet'>Click-iT&reg; reaction cocktail</b> ingredients **as follow**. 
 - <b style='color:red'>Add the incredients in the order listed in the table</b>; otherwise, the reaction will not proceed optimally.</i>
@@ -81,23 +87,25 @@
 > | D                | CuSO<sub>4</sub>                            | 8 <i>&micro;</i>L           |                   |
 > | B                | Alexa Fluor&reg; azide                      | 0.5 <i>&micro;</i>L         | keep in dark      |
 > | E                | **10X** Click-iT&reg; EdU buffer additive   | 2 <i>&micro;</i>L           | add before use    |
-> | Total:           |                                             | 198.5 <i>&micro;</i>L       | take 197 &micro;L |
+> | Total:           |                                             | 198.5 <i>&micro;</i>L       | take 195 &micro;L |
 
 ### **Incubation**
 
-3. Remove wash solution and add <b style='color: violet'>197 <i>&micro;</i>L</b> of <b style='color: violet'>Click-iT&reg; reaction cocktail</b> ( prepare as the table above ) for each sample;
+3. Remove wash solution and add <b style='color: violet'>195 <i>&micro;</i>L</b> of <b style='color: violet'>Click-iT&reg; reaction cocktail</b> ( prepare as the table above ) for each sample;
 
 4. Incubate for <b style='color: violet'>30 minutes</b> at <b style='color: violet'>room temperature</b>. Must be <b style='color: red'>protected from light</b>;
 
 5. Remove the reaction cocktail and wash once with <b style='color: violet'>200 <i>&micro;</i>L</b> of <b style='color: violet'>Click-iT&reg; reaction rince buffer ( Component F )</b>;
 
-6. <b style='color: violet'>Wash 3 times</b> with 1X PBS ( <b style='color: violet'>3 &times; 10 mins</b> );
+6. <b style='color: violet'>Wash 5 times</b> with 1X PBS ( <b style='color: violet'>5 &times; 10 mins</b> );
+
+- You can keep the samples in 1X PBS solution up to 24 hours in 4&deg;C <b style='color: red'>protected from light</b> after washing out the cocktail. If kept more than 24 hours, background fluorescence could be quite obvious.
 
 7. Mount on slide with <b style='color: violet'>Fluoromount-G anti-fade</b> solution<sup>&dagger;</sup>. Proceed to confocal imaging and analysis.  
 - <sup>&dagger;</sup> Using ddH<sub>2</sub>O is also fine if the laser intensity is low and the laser exposure time ( image capturing time ) is short.
 
-<br>
 <div style='page-break-after: always;'></div>
+<br>
 
 ## **Step 4: Confocal parameters**
 
@@ -106,11 +114,11 @@
 | Excitation peak                                            | 495 nm            | 488 nm                      |
 | Emission peak                                              | 519 nm            | 499 ~ 539 nm                |
 | Magnification                                              |                   | 10X                         |
-| Laser intensity ( <b style='color: #97ed1d'>488 nm</b> ) |                   | 2.0%                        |       
-| Master Gain                                                |                   | 600 V                       |
+| Laser intensity ( <b style='color: #97ed1d'>488 nm</b> ) |                   | 16.0%                       |       
+| Master Gain                                                |                   | 700 V                       |
 | Digital Gain                                               |                   | 1.0                         |
 | Pinhole                                                    |                   | &approx; 32 <i>&micro;</i>m |
-| Z-stack interval                                           |                   | 2 <i>&micro;</i>m           |
+| Z-stack interval                                           |                   | 4 <i>&micro;</i>m           |
 | Scan speed                                                 |                   | 6                           |
 | Scan direction                                             |                   | <b>&xrarr;</b>              |
 ||||
@@ -180,7 +188,7 @@ The 1X solution could be stored at 2 ~ 6&deg;C for 6 months.
 
 <sup>&delta;</sup> **Component D**: Catalyze the reaction.
 
-<sup>&epsilon;</sup> **Component E**: Add 2 mL ddH<sub>2</sub>O to the vial of the Component E, mix until fully dissolve the powder to 10X solution. The <b style='color: violet'>10X solution</b> could be stored at <b style='color: violet'>&leq; &minus;20&deg;C</b> for up to 1 year. If the solution develops a brown color, it has degraded and should be discarded.
+<sup>&epsilon;</sup> **Component E**: Add 2 mL ddH<sub>2</sub>O to the vial of the Component E, mix until fully dissolve the powder to 10X solution. The stock should be dispense into several aliquots ( 400 <i>&micro;</i>L each eppendorf for example ) to avoid too frequent thawing and freezing, to prolong the storage lifespan. The <b style='color: violet'>10X solution</b> could be stored at <b style='color: violet'>&leq; &minus;20&deg;C</b> for up to 1 year. If the solution develops a brown color, it has degraded and should be discarded.
 
 <sup>&zeta;</sup> **Component F**: Used to wash cells after the Click-iT&reg; reaction cocktail incubation step. This helps to remove unreacted components and reduce background. Located at 4 &deg;C ( c ), in front of the EdU kit boxes.
 
