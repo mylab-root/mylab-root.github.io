@@ -4,7 +4,6 @@ Quantifying fluorescent protein sensor cytGRX-roGFP2 redox state with a reducedâ
 
 Example image: <a href='https://nph.onlinelibrary.wiley.com/cms/asset/43d9b2d6-30c5-46de-b688-b91628468678/nph71392-fig-0004-m.jpg'>https://nph.onlinelibrary.wiley.com/cms/asset/43d9b2d6-30c5-46de-b688-b91628468678/nph71392-fig-0004-m.jpg</a>
 
-<br>
 
 # Procedure
 
