@@ -47,7 +47,7 @@
 > The manufacturer's manual suggests to dilute the EdU from 10 mM to 10 <i>&micro;</i>M for <i>in vitro</i> experiment. When EdU was dissolved in DMSO, this concentration of DMSO might facilitate the entry of organic molecules into tissue. However, 0.1% of DMSO will affect root growth. So, consider to make higher concentration of EdU stocks, change solvent, or reduce the working solution concentration. Currently, this protocol uses higher concentration of EdU stock ( 100 <i>&micro;</i>M ), and the staining result is statisfiying.
 
 2. Incubate the plants in the <b style='color: violet'>incubation medium</b> in the same cultivation condition for <b style='color: violet'>1 hour</b>.
-- Directly immersed the roots into the solution, <b style='color: red'>DO NOT</b> cut the shoot part, the plant should still alive. The root should be fully submerged into the solution. Do not over-pushing the root to avoid roots injury. 
+- Directly immersed the roots into the solution, <b style='color: red'>DO NOT</b> cut the shoot part, the plant should still alive. Fully submerged the root into the solution. Do not over-pushing, avoid roots injury. 
 
 ## **Step 2: Fixation**
 
@@ -57,12 +57,14 @@
 
 - Better to do this in biosafety cabinet. If too many roots, cut the root on a rigid agar plate ( ~ 1% ), keep the surface wet with 1X PBS to prevent the root dried.
 
-3. Incubate <b style='color: violet'>1 hour</b> under <b style='color: violet'>room temperature</b>;
+3. Incubate <b style='color: violet'>24 hours</b> at <b style='color: violet'>room temperature</b>;
+
+- Incubation time can be varying from 30 minutes to 24 hours, depends on the sample condition. The longer the incubation time, the weaker the background autofluorescence and the EdU signal. When dealing with thick tissues, short incubation time may results incomplete penetration of the fixative solution, background autofluorescence, and too-strong EdU signal (false positive??). We incubate 24 hours to achieve clean background and optimal EdU signal intensity.
 
 4. Remove fixative solution and add <b style='color: violet'>400 <i>&micro;</i>L 1X PBS</b> to wash the roots. Gently pipetting 5-10 times ( avoid touching the root tip ), then leave on the benchtop for 10 mins. Repeat this wash procedure around 5 times ( <b style='color: violet'>5 &times; 10 mins</b> ) until no bubbles appear.
 - <b style='color: darkorange'>Discard the fixative solution in the dark blue toxic carboy under the toxic cabinet;</b>
 
-5. (optional) You can keep the samples in 1X PBS solution up to 24 hours in 4&deg;C protected from light after washing out the fixative solution.
+5. (optional) You can keep the samples in 1X PBS solution up to 48 hours in 4&deg;C protected from light after washing out the fixative solution.
 
 <br>
 <div style='page-break-after: always;'></div>
@@ -95,19 +97,23 @@
 
 4. Incubate for <b style='color: violet'>30 minutes</b> at <b style='color: violet'>room temperature</b>. Must be <b style='color: red'>protected from light</b>;
 
-5. Remove the reaction cocktail and wash once with <b style='color: violet'>200 <i>&micro;</i>L</b> of <b style='color: violet'>Click-iT&reg; reaction rince buffer ( Component F )</b>;
+5. Remove the reaction cocktail and wash once with <b style='color: violet'>400 <i>&micro;</i>L</b> of <b style='color: violet'>Click-iT&reg; reaction rince buffer ( Component F )</b> ( 1 &times; 15 mins );
 
-6. <b style='color: violet'>Wash 5 times</b> with 1X PBS ( <b style='color: violet'>5 &times; 10 mins</b> );
+6. <b style='color: violet'>Wash 5 times</b> with 1X PBS ( <b style='color: violet'>5 &times; 15 mins</b> );
 
-- You can keep the samples in 1X PBS solution up to 24 hours in 4&deg;C <b style='color: red'>protected from light</b> after washing out the cocktail. If kept more than 24 hours, background fluorescence could be quite obvious.
+- You can keep the samples in 1X PBS solution or reaction rince buffer ( Component F ) up to 24 hours in 4&deg;C and <b style='color: red'>protected from light</b> after washing out the cocktail. If kept more than 24 hours, background fluorescence could be quite obvious. Before mount on slide, wash the sample again with 1X PBS for at least twice ( 2 &times; 15 mins ) to minimize background autofluorescence.
 
-7. Mount on slide with <b style='color: violet'>Fluoromount-G anti-fade</b> solution<sup>&dagger;</sup>. Proceed to confocal imaging and analysis.  
-- <sup>&dagger;</sup> Using ddH<sub>2</sub>O is also fine if the laser intensity is low and the laser exposure time ( image capturing time ) is short.
+7. Proceed to confocal imaging and analysis.
 
 <div style='page-break-after: always;'></div>
-<br>
 
 ## **Step 4: Confocal parameters**
+
+Mount on slide with <b style='color: violet'>Fluoromount-G anti-fade</b><sup>&dagger;</sup> solution. Using ddH<sub>2</sub>O is also fine if the laser intensity is low and the laser exposure time ( image capturing time ) is short.  
+
+<sup>&dagger;</sup> Located at 4&deg;C (d). 
+
+Set the confocal parameters as follow:
 
 | Parameters                                                 | Theoretical value | Our machine                 |
 |:--------------------------------------------------------   |:-----------------:|:--------------------:       |
