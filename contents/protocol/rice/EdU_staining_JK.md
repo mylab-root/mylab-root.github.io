@@ -126,7 +126,7 @@ Set the confocal parameters as follow:
 | Pinhole                                                    |                   | &approx; 32 <i>&micro;</i>m |
 | Z-stack interval                                           |                   | 4 <i>&micro;</i>m           |
 | Scan speed                                                 |                   | 6                           |
-| Scan direction                                             |                   | <b>&xrarr;</b>              |
+| Scan direction                                             |                   | <b>&xharr;</b>              |
 ||||
 
 <br>
