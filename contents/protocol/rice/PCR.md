@@ -55,5 +55,3 @@ the same concentration, for example 10 ng/<i>&micro;</i>L.
 <br>
 
 <hr><h2 style="text-align: center">Done !!!</h2><hr>
-
-<br>

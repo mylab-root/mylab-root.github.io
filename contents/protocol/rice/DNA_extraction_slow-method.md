@@ -1,9 +1,10 @@
 # **DNA extraction**
 
 ## Preparation:
+
 | Material                       | Quantity per sample | Note                           |
 | :----------:                   | :---:               | :---:                          |
-| DNA extraction buffer          | 400 &micro;L        |                                |
+| DNA extraction buffer          | 400 &micro;L        | See the last page              |
 | Isopropanol (2-propanol)       | 300 &micro;L        | Around 70% of the supernatant  |
 | Ethanol (EtOH)                 | 1000 &micro;L       | DNase-free ethanol             |
 | Tris-EDTA                      | 100 &micro;L        | Commercial product             |
@@ -19,8 +20,10 @@
 If directly powderized the sample with liquid nitrogen within the ependorf, after filling in the liquid nitrogen into the eppendorf, <b>DO NOT</b> close the lid, the eppendorf will explode as temperature raise.
 
 1. Put two steel balls into each 1.5 mL eppendorf;
+
 > - The steel balls must had been washed with 70% EtOH and autoclaved.
-2. Add <b style='color:orange'>400 &micro;L DNA extraction buffer</b> into each eppendorf;
+
+2. Add <b style='color:orange'>400 <i>&micro;</i>L DNA extraction buffer</b> into each eppendorf;
 3. Directly submerge the samples into the DNA extraction buffer in each eppendorf;
 4. Homogenize the samples and the buffer with a homogenizer;
 > - <b>There are two containers for the homogenizer;</b>
@@ -76,6 +79,7 @@ If directly powderized the sample with liquid nitrogen within the ependorf, afte
 - the diluted DNA should be used as soon as possible
 
 ### Wavelength detection
+
 | Wavelength (nm) | Detected Compound                                                      |
 | :---:           | :---                                                                   |
 | 230             | EtOH, EDTA, carbohydrates, phenol, Guanidone HCL (for DNA isolation)   |
@@ -98,9 +102,9 @@ If directly powderized the sample with liquid nitrogen within the ependorf, afte
 <br>
 <div style='page-break-after: always;'></div>
 
-# Stock solution recipe
+# <b>Stock solutions</b>
 
-## <sup>&dagger;</sup> DNA extraction buffer
+## DNA extraction buffer
 
 | Chemical                                   | Concentration    | Addition |
 | :----------                                | :---:            | :---:    |
