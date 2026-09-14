@@ -370,12 +370,12 @@ Molecular Formula : C<sub>28</sub>H<sub>11</sub>F<sub>7</sub>O<sub>8</sub>S<br>
 M.W. = 640.44 g / mol</p>
 </blockquote>
 <h1 id="procedure">Procedure</h1>
-<h2 id="step-1-prepare-stock-solution--10-mm-"><strong>Step 1: Prepare stock solution ( 10 mM )</strong></h2>
+<h2 id="step-1-prepare-stock-solution--10-mm-">Step 1: Prepare stock solution ( 10 mM )</h2>
 <p>Dissolve 1 mg powder in <b style='color: violet'>156.2 <i>µ</i>L DMSO</b> to form a 10 mM stock solution. Store at room temperature, must be <b style='color: red'>protected from light</b>.</p>
-<h2 id="step-2-stain"><strong>Step 2: Stain</strong></h2>
-<h3 id="short-time"><b style='color: gray'>Short time</b></h3>
-<p>Dilute to <b style='color: violet'>10 - 50 <i>µ</i>M</b> with growth medium. Incubate at room temperature for ≈ 20 mins, protected from light.</p>
-<h3 id="long-time"><b style='color: gray'>Long time</b></h3>
+<h2 id="step-2-stain">Step 2: Stain</h2>
+<h3 id="short-time-incubation"><b style='color: purple'>Short time incubation</b></h3>
+<p>Dilute to <b style='color: purple'>10 - 50 <i>µ</i>M</b> with growth medium. Incubate at room temperature for ≈ 20 mins, protected from light.</p>
+<h3 id="long-time-incubation"><b style='color: violet'>Long time incubation</b></h3>
 <ol>
 <li>Make medium contains <b style='color: violet'>100 nM</b> BES-H<sub>2</sub>O<sub>2</sub>-Ac.</li>
 </ol>
@@ -387,7 +387,7 @@ M.W. = 640.44 g / mol</p>
 </ol>
 <br>
 <div style='page-break-after: always;'></div>
-<h2 id="step-3-confocal-parameters"><strong>Step 3: Confocal parameters</strong></h2>
+<h2 id="step-3-confocal-parameters">Step 3: Confocal parameters</h2>
 <p>Set the confocal parameters as follow:</p>
 <table>
 <thead>
@@ -461,11 +461,15 @@ M.W. = 640.44 g / mol</p>
 </tbody>
 </table>
 <h2 id="step-4-image-processing"><strong>Step 4: Image processing</strong></h2>
-<p>Please visit: <a href='https://mylab-root.github.io/'>https://mylab-root.github.io/</a></p>
-<ul>
-<li>Go to: MENU ⟶ SOFTWARE</li>
-</ul>
-<p>Download the BES-H2O2-Ac executable.</p>
+<p>Open the CZI file with ImageJ, view stack with <code>Hyperstack</code>.</p>
+<h3 id="1-generate-bes-and-t-pmt-layers">1. Generate BES and T-PMT layers</h3>
+<p>Repeat this process twice to generate both the BES and T-PMT layers:</p>
+<p><code>Image</code> ⟶ <code>Stacks</code> ⟶ <code>Z Project...</code> ⟶ Projection type: <code>Max intensity</code> ⟶ <code>File</code> ⟶ <code>Save As</code> ⟶ <code>Tiff...</code></p>
+<h3 id="2-generate-stacks">2. Generate stacks</h3>
+<p>Load in the previously generated BES and T-PMT TIFF files.</p>
+<p><code>Image</code> ⟶ <code>Stacks</code> ⟶ <code>Images to Stack</code></p>
+<h3 id="3-measure-distance">3. Measure distance</h3>
+<p>Measure the distance between root tip and the BES signal distal boundary. The root tip can be easily recognized in the T-PMT layer.</p>
 <br>
 <hr><h2 style="text-align: center">Done !!!</h2><hr>
 </body>

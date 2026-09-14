@@ -8,18 +8,18 @@ Hydrogen peroxide ( H<sub>2</sub>O<sub>2</sub> ) detection probes.
 
 # Procedure
 
-## **Step 1: Prepare stock solution ( 10 mM )**
+## Step 1: Prepare stock solution ( 10 mM )
 
 Dissolve 1 mg powder in <b style='color: violet'>156.2 <i>&micro;</i>L DMSO</b> to form a 10 mM stock solution. Store at room temperature, must be <b style='color: red'>protected from light</b>.
 
 
-## **Step 2: Stain**
+## Step 2: Stain
 
-### <b style='color: gray'>Short time</b>
+### <b style='color: purple'>Short time incubation</b>
 
-Dilute to <b style='color: violet'>10 - 50 <i>&micro;</i>M</b> with growth medium. Incubate at room temperature for &approx; 20 mins, protected from light.
+Dilute to <b style='color: purple'>10 - 50 <i>&micro;</i>M</b> with growth medium. Incubate at room temperature for &approx; 20 mins, protected from light.
 
-### <b style='color: gray'>Long time</b>
+### <b style='color: violet'>Long time incubation</b>
 
 1. Make medium contains <b style='color: violet'>100 nM</b> BES-H<sub>2</sub>O<sub>2</sub>-Ac. 
 
@@ -30,7 +30,7 @@ Dilute to <b style='color: violet'>10 - 50 <i>&micro;</i>M</b> with growth mediu
 <br>
 <div style='page-break-after: always;'></div>
 
-## **Step 3: Confocal parameters**
+## Step 3: Confocal parameters
 
 Set the confocal parameters as follow:
 
@@ -52,11 +52,23 @@ Set the confocal parameters as follow:
 
 ## **Step 4: Image processing**
 
-Please visit: <a href='https://mylab-root.github.io/'>https://mylab-root.github.io/</a>
+Open the CZI file with ImageJ, view stack with `Hyperstack`.
 
-- Go to: MENU &xrarr; SOFTWARE
+### 1. Generate BES and T-PMT layers
 
-Download the BES-H2O2-Ac executable.
+Repeat this process twice to generate both the BES and T-PMT layers:
+
+`Image` &xrarr; `Stacks` &xrarr; `Z Project...` &xrarr; Projection type: `Max intensity` &xrarr; `File` &xrarr; `Save As` &xrarr; `Tiff...`
+
+### 2. Generate stacks
+
+Load in the previously generated BES and T-PMT TIFF files.
+
+`Image` &xrarr; `Stacks` &xrarr; `Images to Stack`
+
+### 3. Measure distance
+
+Measure the distance between root tip and the BES signal distal boundary. The root tip can be easily recognized in the T-PMT layer.
 
 <br>
 <hr><h2 style="text-align: center">Done !!!</h2><hr>
