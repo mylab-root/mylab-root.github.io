@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RNeasy-Micro-Kit.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*
+Monokai style - ported by Luigi Maselli - http://grigio.org
+*/
+.hljs {
+  background: #272822;
+  color: #ddd
+}
+.hljs-tag,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-strong,
+.hljs-number,
+.hljs-name {
+  color: #f92672
+}
+.hljs-code {
+  color: #66d9ef
+}
+.hljs-attribute,
+.hljs-attr,
+.hljs-symbol,
+.hljs-regexp,
+.hljs-link {
+  color: #bf79db
+}
+.hljs-string,
+.hljs-bullet,
+.hljs-subst,
+.hljs-title,
+.hljs-section,
+.hljs-emphasis,
+.hljs-type,
+.hljs-built_in,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #a6e22e
+}
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  color: white
+}
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-doctag,
+.hljs-title,
+.hljs-section,
+.hljs-type,
+.hljs-selector-id {
+  font-weight: bold
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file://C:\\jklai\\github\\rice_heat-stress\\markdown\\markdown-style.css" type="text/css"><link rel="stylesheet" href="file://C:\\jklai\\project\\rice_heat-stress\\markdown\\markdown-style.css" type="text/css">
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="rna-extraction"><b>RNA extraction</b></h1>
+<h3 id="rneasy-micro-kit--manual-"><a href='https://www.qiagen.com/tw/products/discovery-and-translational-research/dna-rna-purification/rna-purification/total-rna/rneasy-kits'>RNeasy® Micro Kit</a> ( <a href='https://www.qiagen.com/en-US/resources/download/KitHandbook/hb-1920-003-hb-rneasy-micro-0321-ww'>Manual</a> )</h3>
+<h1 id="preparation">Preparation</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Chemical</th>
+<th style="text-align:center">Concentration</th>
+<th style="text-align:right">Amount</th>
+<th style="text-align:center">Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Buffer RLT mixture <sup>1</sup></td>
+<td style="text-align:center">−</td>
+<td style="text-align:right">1010 µL</td>
+<td style="text-align:center">RNA bench</td>
+</tr>
+<tr>
+<td style="text-align:left">Buffer RPE mixture <sup>2</sup></td>
+<td style="text-align:center">−</td>
+<td style="text-align:right">2500 µL</td>
+<td style="text-align:center">RNA bench</td>
+</tr>
+<tr>
+<td style="text-align:left">Buffer RW1</td>
+<td style="text-align:center">−</td>
+<td style="text-align:right">700 µL</td>
+<td style="text-align:center">RNA bench</td>
+</tr>
+<tr>
+<td style="text-align:left">Buffer RDD</td>
+<td style="text-align:center">−</td>
+<td style="text-align:right">70 µL</td>
+<td style="text-align:center">RNA bench</td>
+</tr>
+<tr>
+<td style="text-align:left">DNAse I stock solution <sup>3</sup></td>
+<td style="text-align:center">−</td>
+<td style="text-align:right">10 µL</td>
+<td style="text-align:center">4°C (b)</td>
+</tr>
+<tr>
+<td style="text-align:left">DNAse I incubation mix <sup>4</sup></td>
+<td style="text-align:center">−</td>
+<td style="text-align:right">80 µL</td>
+<td style="text-align:center">fresh-prepared</td>
+</tr>
+<tr>
+<td style="text-align:left">Ethanol (EtOH)</td>
+<td style="text-align:center">≥ 96%</td>
+<td style="text-align:right">≥ 2000 µL</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:left">Ethanol (EtOH)</td>
+<td style="text-align:center">80%</td>
+<td style="text-align:right">≥ 500 µL</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:left">Ethanol (EtOH)</td>
+<td style="text-align:center">70%</td>
+<td style="text-align:right">≥ 350 µL</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:left">RNase-free water</td>
+<td style="text-align:center">−</td>
+<td style="text-align:right">≥ 600 µL</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:left">Ice</td>
+<td style="text-align:center">−</td>
+<td style="text-align:right">1 vial</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:left">Liquid nitrogen</td>
+<td style="text-align:center">−</td>
+<td style="text-align:right">1 vial</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup> <strong>Buffer RLT mixture</strong>: Add 10 <i>µ</i>L <i>β</i>-mercaptoethanol ( <i>β</i>-ME ) to 1 mL Buffer RLT. The mixture can be stored at room temperature for up to 1 month.</p>
+<p><sup>2</sup> <strong>Buffer RPE working solution</strong>: Add 4 volumes of ≥ 96% ethanol to Buffer RPE. In this case, add 2000 µL ethanol to 500 µL Buffer RPE.</p>
+<p><sup>3</sup> <strong>DNase I stock solution</strong>: Dissolve the lyophilized DNase I in 550 µL RNase-free water. To avoid loss of DNase I, do not open the vial. Inject RNase-free water into the vial using an RNase-free needle and syringe. Mix gently by inverting the vial. Do not vortex. Store the stock solution as single use aliquots at -20°C (9 months) or 2-8°C (1 month). Do not refreeze after thawing. Located at 4°C, b cabinet.</p>
+<p><sup>4</sup> <strong>DNase I incubation mix</strong>: Add 10 µL DNase I stock solution to 70 µL Buffer RDD, mix by inverting the tube, and put on ice.</p>
+<br>
+<div style='page-break-after: always;'></div>
+<h1 id="procedure">Procedure</h1>
+<blockquote>
+<p>All instruments should be sterilized prior to the experiment</p>
+</blockquote>
+<h2 id="step-1-cell-lysis">Step 1: Cell lysis</h2>
+<ol>
+<li>Dissect ≤ 5 mg tissue ( around 30 root tips ) and dab the surface dry gently (better to use KimWipes paper).</li>
+</ol>
+<blockquote>
+<ul>
+<li>Put the tissue into an eppendorf, slightly centrifuge to spin down the tissue to the bottom of the eppendorf. If the tissue is not used immediately, store the sample at -80°C.</li>
+</ul>
+</blockquote>
+<ol start="3">
+<li>Close the eppendorf lid tightly, and then immediately put the eppendorf into liquid nitrogen ( it will float up by itself, no worry ).</li>
+<li>The drill of the TissueLyser instrument should be pre-cold, by inserting it into the liquid nitrogen.</li>
+<li>Take out the eppendorf and powderize the tissue with the TissueLyser instrument ( this step is extremely important to yield high quantity and quality of RNA, and this step also should be finished as quick as possible ).</li>
+<li>Add <b style='color: darkorange'>350 µL Buffer RLT mixture</b> into the eppendorf and immediately vortex to homogenize the buffer and the powderized tissue ( 10-15 secs )</li>
+<li>Now we get the <b style='color: darkorange'>raw lysate</b>. Place the eppendorf on ice to inhibit enzymatic activity of the lysate.</li>
+</ol>
+<h2 id="step-2-collect-the-lysate-supernatant">Step 2: Collect the lysate supernatant</h2>
+<ol start="8">
+<li>Centrifuge the raw lysate ( 3 mins, 15000 rpm ).</li>
+<li>Carefully take the supernatant to a new eppendorf, and then place on ice.</li>
+<li>Add <b style='color: darkorange'>350 µL 70% EtOH</b> into the sample, mix well with pipetting. <i><b style='color: red'>DO NOT centrifuge</b></i>. Proceed to the next step immediately.</li>
+</ol>
+<h2 id="step-3-wash-1">Step 3: Wash (1)</h2>
+<ol start="11">
+<li>
+<p>Transfer the sample ( including any precipitate that may have formed ) to an <b style='color: darkorange'>RNeasy MinElute® spin column</b> in a <b style='color: orange'>2 mL collection tube</b>. Close the lid and centrifuge ( <b style='color: darkorange'>4°C, 1 min, ≥ 15000 rpm</b> ). <b style='color: skyblue'>Discard the flow-through and reuse the collection tube</b> for the next step.</p>
+</li>
+<li>
+<p>Add <b style='color: darkorange'>350 µL Buffer RW1</b> to the RNeasy MinElute® spin column. Close the lid and centrifuge ( <b style='color: darkorange'>4°C, 1 min, ≥ 15000 rpm</b> ). <b style='color: skyblue'>Discard the flow-through and reuse the collection tube</b> for the next step.</p>
+</li>
+</ol>
+<h2 id="step-4-digest-dna">Step 4: Digest DNA</h2>
+<ol start="13">
+<li>Add the <b style='color: darkorange'>DNase I incubation mix (80 µL)</b> to the RNeasy MinElute® spin column membrane. Place on benchtop at room temperature for <b style='color: darkorange'>15 mins ~ <u>1 hour</u></b>.</li>
+</ol>
+<ul>
+<li>Be sure to add the DNase I incubation mix directly to the RNeasy MinElute spin column membrane. DNase digestion will be incomplete if part of the mix sticks to the walls or the O-ring of the spin column</li>
+<li>The <b>DNase I incubation mix (80 µL)</b> should be fresh-prepared. Add 10 µL DNase I stock solution to 70 µL Buffer RDD, mix by inverting the tube, and put on ice. Please refer to the first page for details.</li>
+</ul>
+<br>
+<div style='page-break-after: always;'></div>
+<h2 id="step-5-wash-2">Step 5: Wash (2)</h2>
+<ol start="14">
+<li>
+<p>Add <b style='color: darkorange'>350 µL Buffer RW1</b> to the RNeasy MinElute® spin column. Close the lid and centrifuge ( <b style='color: darkorange'>4°C, 1 min, ≥ 15000 rpm</b> ). <b style='color: purple'>Discard the flow-through and collection tube</b>.</p>
+</li>
+<li>
+<p>Place the RNeasy MinElute® spin column in a <b style='color: darkorange'>new 2 mL collection tube</b> (supplied). Add <b style='color: darkorange'>500 µL Buffer RPE</b> to the spin column. Close the lid and centrifuge ( <b style='color: darkorange'>4°C, 1 min, ≥ 15000 rpm</b> ). <b style='color: skyblue'>Discard the flow-through and reuse the collection tube</b>.</p>
+</li>
+<li>
+<p>Add <b style='color: darkorange'>500 µL 80% EtOH</b> to the spin column. Close the lid and centrifuge 2 times ( <b style='color: darkorange'>2 × 2 mins, ≥ 15000 rpm</b> ). <b style='color: purple'>Discard the flow-through and collection tube</b>.</p>
+</li>
+</ol>
+<ul>
+<li>After centrifugation, carefully remove the RNeasy MinElute spin column from the collection tube so that the column does not contact the flow-through. Otherwise, carryover of ethanol will occur.</li>
+</ul>
+<ol start="17">
+<li>Place the RNeasy MinElute® spin column in a <b style='color: darkorange'>new 2 mL collection tube</b> (supplied). <b style='color: red'>Open the lid</b> and centrifuge at full speed ( <b style='color: darkorange'>4°C, 15 mins, ≥ 15000 rpm</b> ) to dry the membrane. <b style='color: purple'>Discard the flow-through and collection tube</b>.</li>
+</ol>
+<ul>
+<li>To avoid damage to their lids, place the spin columns into the centrifuge with at least one empty position between columns. Orient the lids so that they point in a direction opposite to the rotation of the rotor (e.g., if the rotor rotates clockwise, orient the lids counterclockwise)</li>
+</ul>
+<h2 id="step-6-elute-rna">Step 6: Elute RNA</h2>
+<ol start="18">
+<li>Place the RNeasy MinElute® spin column in a <b style='color: orange'>new 1.5 mL RNase-free low-binding collection tube</b> (supplied). Add <b style='color: darkorange'>14 <i>µ</i>L RNase-free water</b> directly to the center of the spin column membrane. Close the lid gently, and centrifuge at full speed ( <b style='color: darkorange'>4°C, 1 ~ <u>15 mins</u>, ≥ 15000 rpm</b> ) to elute the RNA.</li>
+</ol>
+<h2 id="step-7-rna-quality--quantity-measurement">Step 7: RNA quality &amp; quantity measurement</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">NanoDrop™</th>
+<th style="text-align:center">Qubit™</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Concentration ( &gt; 100 ng / <i>u</i>L )</td>
+<td style="text-align:center">✓</td>
+<td style="text-align:center">✓</td>
+</tr>
+<tr>
+<td style="text-align:center">Concentration ( &lt; 10 ng / <i>u</i>L )</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">✓</td>
+</tr>
+<tr>
+<td style="text-align:center">Require high precision</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">✓</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<ol start="19">
+<li>Measure the RNA quality and quantity.</li>
+<li>Store the RNA at −80°C.</li>
+</ol>
+<br>
+<div style='page-break-after: always;'></div>
+<h1 id="materials-provided-by-the-kit">Materials Provided by the kit</h1>
+<blockquote>
+<p>Buffer RLT (store at 15 - 25°C)<br>
+Buffer RPE (working solution) (store at 15 - 25°C)<br>
+Buffer RDD (store at 15 - 25°C)<br>
+Buffer RW1 (store at 15 - 25°C)<br>
+DNase Set (RNase-Free) (store at 2 - 8°C)<br>
+RNeasy MinElute® spin columns (store at 2 - 8°C)<br>
+2 mL collection tube<br>
+1.5 mL collection tube</p>
+</blockquote>
+<ul>
+<li>Buffer RLT is a lysis buffer for lysing cells and tissues</li>
+<li>Buffer RPE is a 55 ml concentrated buffer for washing membrane-bound RNA</li>
+<li>Buffer RDD provides efficient on-column digestion of DNA and also ensures that the RNA remains bound to the column</li>
+<li>Buffer RW1 is for washing membrane-bound RNA</li>
+<li><b style='color: violet'>RNeasy MinElute® spin columns</b> ( pink color lid ) stored at 4°C, b cabinet</li>
+</ul>
+<br>
+<div style='page-break-after: always;'></div>
+<!-- ================================================================================================================= -->
+<!-- RNA quantification with Qubit -->
+<!-- ================================================================================================================= -->
+<h1 id="rna-quantification-with-qubit"><strong>RNA quantification with Qubit™</strong></h1>
+<h3 id="qubit-rna-hs-assay-kit"><a href='https://www.thermofisher.com/order/catalog/product/Q32852'>Qubit™ RNA HS Assay Kit</a></h3>
+<h1 id="procedure-1">Procedure</h1>
+<h2 id="materials">Materials</h2>
+<blockquote>
+<p>For best results, ensure that all materials and reagents are at room temperature.</p>
+</blockquote>
+<ol>
+<li>Set up the required number of Qubit™ Assay Tubes for standards and samples. This assay requires 2 standards ( Component C and D ).</li>
+</ol>
+<ul>
+<li><i><strong>Note</strong>: Use only thin-wall, clear, 0.5 mL PCR tubes ( Cat. No. <a href='https://www.thermofisher.com/search/results?query=Q32856'>Q32856</a> ) for the Qubit™ 4 Fluorometer.</i></li>
+</ul>
+<ol start="2">
+<li>Label the tube lids.</li>
+</ol>
+<ul>
+<li><i><strong>Note</strong>: Do not label the side of the tubes, that will affect light penetration. Label the lid of each standard tube correctly, as the calibration of the Qubit™ Fluorometer requires the standards to be inserted into the instrument in the right order.</i></li>
+</ul>
+<h2 id="step-1-make-working-solution">Step 1: Make working solution</h2>
+<p>The working solution is a mixture of Component A (dye) and Component B (HS buffer), with a ratio of 1 : 199. For example, to make 10 tubes (8 samples + 2 standards), add 10 µL dye into 1990 µL HS buffer.</p>
+<ol>
+<li>Prepare the <b style='color: orange'>working solution</b> by diluting Component A 1:200 in Component B for each tube ( sample + standard solutions ). For example, 10 µL Component A + 1990 µL Component B for 10 tubes ( 8 samples + 2 standards ).</li>
+</ol>
+<ul>
+<li><i><strong>Note</strong>: <b style='color: red'>DO NOT</b> mix the working solution in a glass container. Use clean plastic tube</i></li>
+</ul>
+<h2 id="step-2-prepare-standard-solutions">Step 2: Prepare standard solutions</h2>
+<br>
+<div style='page-break-after: always;'></div>
+<h2 id="step-3-prepare-sample-solutions">Step 3: Prepare sample solutions</h2>
+<ol start="2">
+<li>Add the working solution to each tube such that the final volume is 200 µL.</li>
+</ol>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">Standard assay tubes</th>
+<th style="text-align:center">User sample assay tubes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Volume of working solution</td>
+<td style="text-align:center">190 µL</td>
+<td style="text-align:center">180 – 199 µL</td>
+</tr>
+<tr>
+<td style="text-align:center">Volume of standard</td>
+<td style="text-align:center">10 µL</td>
+<td style="text-align:center">—</td>
+</tr>
+<tr>
+<td style="text-align:center">Volume of user sample</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">1 – 20 µL</td>
+</tr>
+<tr>
+<td style="text-align:center">Total volume in each assay tube</td>
+<td style="text-align:center">200 µL</td>
+<td style="text-align:center">200 µL</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<ol start="5">
+<li>Add <b style='color: orange'>10 µL</b> of Component C ( <b style='color: orange'>standard # 1</b> ) and D ( <b style='color: orange'>standard # 2</b> ) separately to the appropriate tubes.</li>
+<li>Add <b style='color: orange'>1 µL</b> of each user <b style='color: orange'>sample</b> to the appropriate tubes.</li>
+<li>Vigorously vortex for 3 ~ 5 seconds.</li>
+<li>Incubate at room temperature for 2 minutes. Then proceed to read standards and samples with the Qubit™ 4 Fluorometer.</li>
+</ol>
+<h2 id="reading-standards-and-samples">Reading standards and samples</h2>
+<ol>
+<li>On the <strong><code>Home</code></strong> screen, touch <strong><code>RNA</code></strong>, then select <strong><code>RNA High Sensitivity</code></strong> as the assay type. Touch <strong><code>Read standards</code></strong> to proceed.</li>
+<li>Insert the tube containing <strong>Standard # 1</strong> into the sample chamber, close the lid, then touch <strong><code>Read standard</code></strong>. When the reading is comnplete, remove Standard # 1.</li>
+<li>Insert the tube containing <strong>Standard # 2</strong> into the sample chamber, close the lid, then touch <strong><code>Read standard</code></strong>. When the reading is comnplete, remove Standard # 2.</li>
+<li>Touch <strong><code>Run samples</code></strong>.</li>
+<li>On the assay screen, select the <strong><code>Sample volume</code></strong> and <strong><code>Unit</code></strong>.</li>
+</ol>
+<ul>
+<li>Touch the + or - buttons on the wheel, or anywhere on the wheel itself, to select the sample volume added to the assay tube ( 1 µL in this protocol ).</li>
+<li>From the <strong><code>Unit</code></strong> dropdown menu, select the units for the output sample concentration.</li>
+</ul>
+<ol start="6">
+<li>Insert a sample tube into the sample chamber, close the lid, then touch <strong><code>Read tube</code></strong>. When the reading is complete ( ~ 3 seconds ), remove the sample tube.</li>
+</ol>
+<ul>
+<li>The top value ( in large font ) is the concentration of the original sample and the bottom value is the dilution concentration.</li>
+</ul>
+<ol start="7">
+<li>Repeat step 6 until all samples have been read.</li>
+</ol>
+<div style='page-break-after: always;'></div>
+<br>
+<!-- ================================================================================================================= -->
+<!-- Materials -->
+<!-- ================================================================================================================= -->
+<h1 id="materials-provided-by-the-kit-1">Materials Provided by the kit</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Component</th>
+<th style="text-align:left">Material name</th>
+<th style="text-align:center">Q32852 <sup>*</sup></th>
+<th style="text-align:center">Concentration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">A <sup>☨</sup></td>
+<td style="text-align:left">Qubit™ RNA HS Reagent</td>
+<td style="text-align:center">250 µL</td>
+<td style="text-align:center">200X in DMSO</td>
+</tr>
+<tr>
+<td style="text-align:center">B <sup>§</sup></td>
+<td style="text-align:left">Qubit™ RNA HS Buffer</td>
+<td style="text-align:center">50 mL</td>
+<td style="text-align:center">‐</td>
+</tr>
+<tr>
+<td style="text-align:center">C <sup>※</sup></td>
+<td style="text-align:left">Qubit™ RNA HS Standard # 1</td>
+<td style="text-align:center">1 mL</td>
+<td style="text-align:center">0 ng/µL in TE buffer</td>
+</tr>
+<tr>
+<td style="text-align:center">D <sup>※</sup></td>
+<td style="text-align:left">Qubit™ RNA HS Standard # 2</td>
+<td style="text-align:center">4 × 250 µL</td>
+<td style="text-align:center">10 ng/µL in TE buffer</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p><sup>*</sup> <strong>Q32852</strong>: Catalogue number. When stored as directed, kits are stable for 6 months.</p>
+<p><sup>☨</sup> <strong>Component A</strong>: Stored at 2 ~ 8°C ( short-term storage ) or ≤ -20°C ( long-term storage ), desiccated, protect from light. Located at -80°C, upper door, 2<sup>nd</sup> layer, 2<sup>nd</sup> column, 3<sup>rd</sup> drawer, 10 <i>µ</i>L <b style='color: darkorange'>pale blue</b> aliquots in PCR tubes.</p>
+<p><sup>§</sup> <strong>Component B</strong>: Stored at ≤ 30 °C. Located at VI.</p>
+<p><sup>※</sup> <strong>Component C &amp; D</strong>: Stored at 2 ~ 8°C ( short-term storage ) or ≤ -20°C ( long-term storage ). Located at -80°C, upper door, 2<sup>nd</sup> layer, 2<sup>nd</sup> column, 3<sup>rd</sup> drawer.</p>
+<br>
+<h1 id="materials-not-provided-by-the-kit">Materials NOT Provided by the kit</h1>
+<ol>
+<li>Plastic container ( RNase-free, disposable ) for mixing the Qubit™ working solution;</li>
+<li>Qubit™ Assay Tubes ( 500 tubes, Cat. No. <a href='https://www.thermofisher.com/search/results?query=Q32856'>Q32856</a> );</li>
+</ol>
+
+</body>
+</html>
