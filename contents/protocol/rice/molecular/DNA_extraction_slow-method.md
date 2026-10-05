@@ -2,13 +2,13 @@
 
 ## Preparation:
 
-| Material                       | Quantity per sample | Note                           |
-| :----------:                   | :---:               | :---:                          |
-| DNA extraction buffer          | 400 &micro;L        | See the last page              |
-| Isopropanol (2-propanol)       | 300 &micro;L        | Around 70% of the supernatant  |
-| Ethanol (EtOH)                 | 1000 &micro;L       | DNase-free ethanol             |
-| Tris-EDTA                      | 100 &micro;L        | Commercial product             |
-||||
+| Material                       | Quantity per sample | Note                           | Location |
+| :----------:                   | :---:               | :---:                          | :---:    |
+| DNA extraction buffer          | 400 &micro;L        | See the last page              | Self-prepared |
+| Isopropanol (2-propanol)       | 300 &micro;L        | Around 70% of the supernatant  | Toxin (D)     |
+| Ethanol (EtOH)                 | 1000 &micro;L       | DNase-free 100% Ethanol        | &#8548;       |
+| Tris-EDTA                      | 100 &micro;L        | Commercial product             | 
+|||||
 
 <br>
 
@@ -21,20 +21,26 @@ If directly powderized the sample with liquid nitrogen within the ependorf, afte
 
 1. Put two steel balls into each 1.5 mL eppendorf;
 
-> - The steel balls must had been washed with 70% EtOH and autoclaved.
+> - The steel balls must had been thoroughly washed with 5% bleach, 70% EtOH, and autoclaved.
 
 2. Add <b style='color:orange'>400 <i>&micro;</i>L DNA extraction buffer</b> into each eppendorf;
+
 3. Directly submerge the samples into the DNA extraction buffer in each eppendorf;
+
 4. Homogenize the samples and the buffer with a homogenizer;
+
 > - <b>There are two containers for the homogenizer;</b>
 > - each containers should be balanced (the amount and placement of the samples);
-> - put a tissue on top of the eppendorfs' lid, this can prevent the solution seep out to the container bottom, and also eliminates the space between the container and the cover, improves grinding efficiency; 
+> - put a tissue paper on top of the eppendorfs' lid, this can prevent the solution seep out to the container bottom, and also eliminates the space between the container and the cover, improves grinding efficiency; 
 > - after mounted the containers on the machine, fasten tight the big roller, and stuck in the tenons.
+
 5. Confirm the machine settings and start homogenizing;
 > - Frequency : 30 hits / sec ( maximum frequency )
-> - Time : 2.0 mins &times; 3
-6. Centrifuge at room temperature ( > 15000 rpm, 20 mins ) to bring down the bubbles;
-7. Dry bath ( 60&deg;C, > 1 hour );
+> - Time : 10 mins
+
+6. Centrifuge at room temperature ( <b style='color: violet;'>> 15000 rpm, 20 mins</b> ) to bring down the bubbles;
+
+7. Dry bath ( <b style='color: violet'>60&deg;C, > 1 hour</b> );
 
 <br>
 <div style='page-break-after: always;'></div>
@@ -42,7 +48,8 @@ If directly powderized the sample with liquid nitrogen within the ependorf, afte
 ## Step 2: Disrupt protein&mdash;DNA interactions
 
 8. Add <b style='color:orange'>400 <i>&micro;</i>L 5 M NaCl</b> ( same volume with the extraction buffer, therefore the NaCl final concentration will be 2.5 M );
-9. Centrifuge at room temperature ( > 15000 rpm, 20 mins ) to bring down the remaining tissues; 
+
+9. Centrifuge at room temperature ( <b style='color: violet'>> 15000 rpm, 20 mins</b> ) to bring down the remaining tissues; 
 
 ## Step 3: Collect DNA supernatant
 
@@ -51,13 +58,17 @@ If directly powderized the sample with liquid nitrogen within the ependorf, afte
 ## Step 4: Precipitate DNA
 
 11. Add <b style='color:orange'>300 <i>&micro;</i>L isopropanol</b> ( around 70% of the supernatant volume ) into the supernatant, leave overnight at -20&deg;C;
+
 12. Centrifuge at 4&deg;C ( > 15000 rpm, 20 mins ) to bring down the DNA;
+
 13. Discard the supernatant carefully. Do not touch the tube bottom, which sticking with the DNA palette;
 
 ## Step 5: Wash
 
 14. Add <b style='color:orange'>200 <i>&micro;</i>L 70% ethanol</b> and gently invert the tube;
+
 15. Centrifuge at 4&deg;C ( > 15000 rpm, 20 mins ) to bring down the DNA;
+
 16. Discard the ethanol carefully with small pipette;
 
 ## Step 6: Elute DNA
@@ -120,8 +131,14 @@ If directly powderized the sample with liquid nitrogen within the ependorf, afte
 
 ## Tris-HCl stock solution ( 1 M )
 
+[Sigma-Aldrich (Cas No: 252859)](https://www.sigmaaldrich.com/TW/en/product/sial/252859)
+
+> Tris(hydroxymethyl)aminomethane, 2-Amino-2-(hydroxymethyl)-1,3-propanediol, THAM, Tris base, Trometamol
+
 1. Dissolve 121.1 g of Tris base in 800 mL of ddH<sub>2</sub>O;
-2. Adjust the pH to the desired value by adding concentrated HCl;
+- The Tris base located at &#8547;
+2. Adjust the pH to the desired value by adding concentrated Hydrochloric acid ( HCl );
+- The HCl located at Toxin (D)
 3. Allow the solution to cool to room temperature before making final adjustments to the pH;
 4. Adjust the volume of the solution to 1 L with ddH<sub>2</sub>O. Dispense into aliquots and sterilize by autoclaving.
 
@@ -135,8 +152,11 @@ If directly powderized the sample with liquid nitrogen within the ependorf, afte
 <br>
 
 ## EDTA stock solution ( 0.5 M, pH 8.0 )
-> EDTA ( Ethylenediamenetetraacetic acid )  
+
+> EDTA ( Ethylenediamenetetraacetic acid ), Ethylenediaminetetraacetic Acid Disodium Salt Dihydrate 
+
 1. Add 186.1 g of disodium EDTA &bullet; 2H<sub>2</sub>O to 800 mL of ddH<sub>2</sub>O;
+- The EDTA disodium located at &#8546;
 2. Stir vigorously on a magnetic stirrer to dissolve the EDTA;
 3. Adjust the pH to 8.0 with NaOH (~ 20 g of NaOH pellets);  
 > Note: The disodium salt of EDTA will not go into solution until the pH is adjusted to ~ 8.0 by the addition of NaOH.  
@@ -148,6 +168,7 @@ If directly powderized the sample with liquid nitrogen within the ependorf, afte
 ## SDS stock solution ( 10% )
 > Sodium dodecyl sulfate, sodium lauryl sulfate  
 1. Dissolve 100 g of electropheresis-grade SDS in 900 mL of ddH<sub>2</sub>O;
+- The SDS located at &#8546;
 2. Heat to 68&deg;C and stir with a magnetic stirrer to assist dissolution. If necessary, adjust the pH to 7.2 by adding a few drops of concentrated HCl;
 3. Adjust the volume to 1 L with ddH<sub>2</sub>O;
 4. Store at room temperature. Sterilization is not necessary. 

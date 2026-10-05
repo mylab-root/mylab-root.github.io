@@ -1,3 +1,3 @@
 # Root Signaling Research
 
-<a href='https://github.com/mylab-root/mylab-root.github.io'>Website<a>
+<a href='https://mylab-root.github.io/'>Website<a>
